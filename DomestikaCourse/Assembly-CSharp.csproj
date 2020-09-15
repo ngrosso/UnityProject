@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CE296B9F-5D2B-0840-B462-DF071C417B9B}</ProjectGuid>
+    <ProjectGuid>{69BD85E9-69FC-A184-F1F9-8658BD15A39E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,18 +59,19 @@
      <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
      <Compile Include="Assets\Scripts\InstantiatePrefab.cs" />
      <Compile Include="Assets\Scripts\TestingKeys.cs" />
+     <Compile Include="Assets\Scripts\TestingRaycast2D.cs" />
      <Compile Include="Assets\Scripts\Weapon.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/home/zephi/workspace/Unity/Domestika Course/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/home/zephi/workspace/Unity/Domestika Course/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/home/zephi/workspace/Unity/Domestika Course/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/home/zephi/workspace/Unity/Domestika Course/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>/home/zephi/Unity/Hub/Editor/2019.1.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
