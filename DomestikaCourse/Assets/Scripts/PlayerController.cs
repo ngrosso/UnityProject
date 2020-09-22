@@ -19,9 +19,9 @@ public class PlayerController : MonoBehaviour
     private Vector2 _movement; //vector de movimiento para mover al player
     private bool _facingRight = true;
     private bool _isGrounded;
-    
+
     //Attack
-    private bool isAttacking; //TODO
+    private bool _isAttacking;
     void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -37,41 +37,57 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame, best for calling input from the player
     void Update()
     {
-        /*
-        El personaje va a tener input lag en las pruebas, para revisar por que es esto
-        en project settings -> input -> sensibilidad y gravedad  esta definido la variacion
-        para solucionar esto en el codigo se reemplaza
-        Input.GetAxis -> Input.GetAxisRaw
-        */
-        //movement
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        _movement = new Vector2(horizontalInput, 0f);
+        Debug.Log("attacking? " + _isAttacking);
 
-        //flip character
-        if (horizontalInput < 0f && _facingRight == true)
+        if (!_isAttacking)
         {
-            Flip();
-        }
-        else if (horizontalInput > 0f && _facingRight == false)
-        {
-            Flip();
+            /*
+            El personaje va a tener input lag en las pruebas, para revisar por que es esto
+            en project settings -> input -> sensibilidad y gravedad  esta definido la variacion
+            para solucionar esto en el codigo se reemplaza
+            Input.GetAxis -> Input.GetAxisRaw
+            */
+            //movement
+            float horizontalInput = Input.GetAxisRaw("Horizontal");
+            _movement = new Vector2(horizontalInput, 0f);
+
+            //flip character
+            if (horizontalInput < 0f && _facingRight)
+            {
+                Flip();
+            }
+            else if (horizontalInput > 0f && !_facingRight)
+            {
+                Flip();
+            }
         }
 
         //Is grounded?
         _isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer); //checkea si esta tocando el suelo
 
         //Is Jumping?
-        if (Input.GetButtonDown("Jump") && _isGrounded == true)
+        if (Input.GetButtonDown("Jump") && _isGrounded)
         {
             _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+
+        //wanna attack?
+        if (Input.GetButtonDown("Fire1") && _isGrounded && !_isAttacking)
+        {
+            _movement = Vector2.zero;
+            _rigidbody.velocity = Vector2.zero;
+            _animator.SetTrigger("attack");
         }
     }
 
     //Para mover cualquier objeto fisico en unity
     void FixedUpdate()
     {
-        float horizontalVelocity = _movement.normalized.x * speed;
-        _rigidbody.velocity = new Vector2(horizontalVelocity, _rigidbody.velocity.y); //(velocidad el juegador, velocidad actual del rigidbody)
+        if (!_isAttacking)
+        {
+            float horizontalVelocity = _movement.normalized.x * speed;
+            _rigidbody.velocity = new Vector2(horizontalVelocity, _rigidbody.velocity.y); //(velocidad el juegador, velocidad actual del rigidbody)
+        }
     }
 
     //Ultimo update justo antes de renderizar en pantalla, aqui se usa el codigo de animaciones
@@ -80,6 +96,16 @@ public class PlayerController : MonoBehaviour
         _animator.SetBool("isIdle", _movement == Vector2.zero);
         _animator.SetBool("isGrounded", _isGrounded);
         _animator.SetFloat("verticalVelocity", _rigidbody.velocity.y);
+
+        //animator cuando cierto animator tiene un tag (en esta caso saber si esta en idle)
+        if (_animator.GetCurrentAnimatorStateInfo(0).IsName("Attacking"))
+        {
+            _isAttacking = true;
+        }
+        else
+        {
+            _isAttacking = false;
+        }
     }
 
     private void Flip()
