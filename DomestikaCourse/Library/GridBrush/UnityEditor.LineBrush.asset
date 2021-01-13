@@ -36,4 +36,4 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   lineStartActive: 1
   fillGaps: 0
-  lineStart: {x: -21, y: 9, z: 0}
+  lineStart: {x: 11, y: 6, z: 0}

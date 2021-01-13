@@ -55,6 +55,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\3rdPersonWithAimMode\ActivateOnKeypress.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\PlayerLookAt.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\PlayerMovement.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetProperty.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetTargetController.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\DualTarget\MoveAimTarget.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\DualTarget\PointAtAimTarget.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Scripting\ScriptingExample.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Trigger volumes\GenericTrigger.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Models\UnityCharacter\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Models\UnityCharacter\Scripts\CharacterMovement2D.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Models\UnityCharacter\Scripts\CharacterMovementNoCamera.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\ActivateCamOnPlay.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\ExampleHelpWindow.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\InvokeEventFromInspector.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\MixingCameraBlend.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\PlayerMove.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\PlayerMovePhysics.cs" />
+     <Compile Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Shared\Scripts\SpawnInCircle.cs" />
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\EnemyPatrol.cs" />
      <Compile Include="Assets\Scripts\InstantiatePrefab.cs" />
@@ -75,16 +97,41 @@
      <Compile Include="Assets\Tilemap\Tiles\Weighted Random Tile\WeightedRandomTile.cs" />
      <None Include="Assets\uipack-space-kenney\Spritesheet\uipackSpace_sheet.xml" />
      <None Include="Assets\Tilemap\Tiles\Rule Tile\ScriptTemplates\NewCustomRuleTile.cs.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <None Include="Assets\Tilemap\Brushes\Tint Brush Smooth\Shaders\TintedTilemap.shader" />
+     <None Include="Assets\Samples\Cinemachine\2.7.1\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\uipack-space-kenney\license.txt" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -271,6 +318,9 @@
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/home/zephi/Unity/Hub/Editor/2019.1.12f1/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="clipper_library">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/PackageCache/com.unity.cinemachine@2.7.1/Runtime/ThirdParty/clipper_library.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>/home/zephi/Unity/Hub/Editor/2019.1.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -72,11 +72,17 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Cinemachine">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
@@ -281,6 +287,9 @@
  </Reference>
  <Reference Include="UnityEditor.LinuxStandalone.Extensions">
  <HintPath>/home/zephi/Unity/Hub/Editor/2019.1.12f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="clipper_library">
+ <HintPath>/home/zephi/workspace/Unity/DomestikaCourse/Library/PackageCache/com.unity.cinemachine@2.7.1/Runtime/ThirdParty/clipper_library.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/home/zephi/Unity/Hub/Editor/2019.1.12f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
