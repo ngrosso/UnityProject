@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -36,6 +35,9 @@ public class Weapon : MonoBehaviour
 
     public void Shoot()
     {
+        Debug.Log("bulletPrefab: "+bulletPrefab);
+        Debug.Log("shooter: "+shooter);
+        Debug.Log("firepoint: "+_firePoint);
         if (bulletPrefab != null && _firePoint != null && shooter != null)
         {
             GameObject myBullet = Instantiate(bulletPrefab, _firePoint.position, Quaternion.identity) as GameObject;
