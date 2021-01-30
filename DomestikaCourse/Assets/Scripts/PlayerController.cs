@@ -37,7 +37,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame, best for calling input from the player
     void Update()
     {
-        Debug.Log("attacking? " + _isAttacking);
 
         if (!_isAttacking)
         {
